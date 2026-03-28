@@ -1,0 +1,21 @@
+{
+  "name": "inerg-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium --workers=1",
+    "report": "playwright show-report",
+    "test:report": "node scripts/run-tests-and-report.js",
+    "test:launch:chromium:report": "node scripts/run-chromium-launch-and-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0"
+  }
+}
